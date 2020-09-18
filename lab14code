@@ -1,0 +1,11 @@
+SELECT * 
+FROM SalesLT.Product
+WHERE ListPrice <= 30
+ORDER BY ListPrice DESC;
+
+
+---------------------------------------------------------
+
+SELECT CustomerID, EmailAddress, PasswordHash, PasswordSalt
+FROM SalesLT.Customer
+WHERE PasswordHash IS NOT NULL;
